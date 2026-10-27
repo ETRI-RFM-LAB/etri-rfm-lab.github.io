@@ -267,7 +267,8 @@ const PAPER_FIGURES = {
   'spaceawareinstructiontuningdatasetandbenchmarkforguidedogrobotsassistingthevisuallyimpaired': 'assets/papers/space-aware-instruction-tuning.jpg',
   'rethinkingdatabiasdatasetcopyrightprotectionviaembeddingclasswisehiddenbias': 'assets/papers/undercover-bias.jpg',
   'learningtorewindviaiterativepredictionofpastweightsforpracticalunlearning': 'assets/papers/learning-to-rewind.jpg',
-  'savlmv2usefulcomprehensiveandconciseguidanceforguidedogrobotsassistingthevisuallyimpaired': 'assets/papers/sa-vlm-v2.jpg'
+  'savlmv2usefulcomprehensiveandconciseguidanceforguidedogrobotsassistingthevisuallyimpaired': 'assets/papers/sa-vlm-v2.jpg',
+  'gradientmineunitsscorchedearthstrategyformodelprotectionagainstunauthorizedfinetuning': 'assets/papers/gradient-mine-units.jpg'
 };
 
 function titleKey(item) { return normalize(item['영문 논문 제목'] || item['논문 제목']).replace(/[^a-z0-9가-힣]/g, ''); }
