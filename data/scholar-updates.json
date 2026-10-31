@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-28T08:01+09:00",
+  "updated": "2026-11-01T08:01+09:00",
   "columns": [
     "ID",
     "논문 제목",
@@ -22,6 +22,38 @@
   ],
   "failed_members": [],
   "items": [
+    {
+      "title": "Learning Tactile-Aware Hand Representations from Human Hand-Object Interaction Data",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aIL0mvoAAAAJ&pagesize=50&sortby=pubdate&citation_for_view=aIL0mvoAAAAJ:RHpTSmoSYBkC",
+      "authors": "Yeonguk Yu, Jaehong Kim, Byungok Han",
+      "venue": "arXiv preprint arXiv:2610.27995",
+      "year": 2026,
+      "members": [
+        "ByungOk Han"
+      ],
+      "link": "https://arxiv.org/abs/2610.27995",
+      "first_seen": "2026-11-01",
+      "row": [
+        "",
+        "Learning Tactile-Aware Hand Representations from Human Hand-Object Interaction Data",
+        "",
+        "Yeonguk Yu, Jaehong Kim, Byungok Han",
+        "Yeonguk Yu",
+        "",
+        "2026",
+        "",
+        "arXiv preprint arXiv:2610.27995",
+        "FALSE",
+        "FALSE",
+        "",
+        "",
+        "",
+        "https://arxiv.org/abs/2610.27995",
+        "",
+        "",
+        ""
+      ]
+    },
     {
       "title": "Trinity: Human–Agent–Environment Alignment for Embodied Task Planning",
       "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VyOx3aAAAAAJ&pagesize=50&sortby=pubdate&citation_for_view=VyOx3aAAAAAJ:M3ejUd6NZC8C",
