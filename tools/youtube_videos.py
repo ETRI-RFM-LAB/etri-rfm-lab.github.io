@@ -2,8 +2,8 @@
 """Refresh data/videos.json with the lab's videos from the ETRI_HROS YouTube channel.
 
 The feed often answers 404 or 500 at random, so the request is retried.
-By default the script commits and pushes data/videos.json when it changes;
-the GitHub Action runs it with --no-push and commits itself.
+Runs from cron on the lab PC (YouTube refuses the feed from GitHub Actions)
+and commits and pushes data/videos.json when the list changes.
 The channel RSS feed only lists the latest 15 uploads, so videos already in
 data/videos.json are kept and new ones are merged in. Only titles tagged
 "[RFM]" belong to this lab; the tag is stripped for display.
