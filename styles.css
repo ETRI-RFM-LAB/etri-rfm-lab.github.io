@@ -231,3 +231,13 @@ body[data-page="home"] .head h2{font-size:clamp(24px,2.7vw,34px)}
 .video-item{margin:0}
 .video-item figcaption{margin-top:14px;color:#1d2433;font-size:15px;font-weight:700;text-align:center}
 @media(max-width:900px){.video-grid.two{grid-template-columns:1fr}}
+/* Home video player: one large video with selectable thumbnails below */
+.video-player{max-width:920px;margin:0 auto}
+.video-thumbs{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px;margin-top:20px}
+.video-thumbs:empty{display:none}
+.video-thumb{display:flex;flex-direction:column;gap:8px;padding:0;border:0;background:none;text-align:left;cursor:pointer;font:inherit}
+.video-thumb img{width:100%;aspect-ratio:16/9;object-fit:cover;border:2px solid transparent;opacity:.7;transition:opacity .2s,border-color .2s}
+.video-thumb span{color:#5b6576;font-size:13px;font-weight:700;line-height:1.4}
+.video-thumb.is-active img,.video-thumb:hover img{border-color:#f05a22;opacity:1}
+.video-thumb.is-active span{color:#1d2433}
+@media(max-width:720px){.video-thumbs{grid-template-columns:repeat(2,1fr);gap:12px}}
