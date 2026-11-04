@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: python3 tools/youtube_videos.py
+      - run: python3 tools/youtube_videos.py --no-push
       - name: Commit changes
         run: |
           git add data/videos.json
