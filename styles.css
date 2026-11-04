@@ -226,3 +226,8 @@ body[data-page="home"] .head h2{color:#1d2433;font-weight:800}
 .hero-copy h1{font-family:Outfit,Arial,sans-serif;letter-spacing:-.3px}
 .hero-copy h1{font-size:clamp(24px,2.7vw,34px);margin-bottom:18px}
 body[data-page="home"] .head h2{font-size:clamp(24px,2.7vw,34px)}
+/* Two home videos side by side, stacked on narrow screens */
+.video-grid.two{grid-template-columns:1fr 1fr;max-width:none;gap:28px}
+.video-item{margin:0}
+.video-item figcaption{margin-top:14px;color:#1d2433;font-size:15px;font-weight:700;text-align:center}
+@media(max-width:900px){.video-grid.two{grid-template-columns:1fr}}
