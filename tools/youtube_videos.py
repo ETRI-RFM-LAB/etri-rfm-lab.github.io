@@ -22,6 +22,8 @@ CHANNEL_ID = 'UCyr9KjwK-02c5cT6PS4rbFg'
 FEED = f'https://www.youtube.com/feeds/videos.xml?channel_id={CHANNEL_ID}'
 REPO = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 OUT = os.path.join(REPO, 'data', 'videos.json')
+# Videos left off the home page on purpose.
+EXCLUDE = {'vBFTPuRpU1E'}  # Learning from Oblivion (shown on the Research page)
 TAG = re.compile(r'^\s*\[RFM\]\s*', re.I)
 NS = {'a': 'http://www.w3.org/2005/Atom', 'yt': 'http://www.youtube.com/xml/schemas/2015'}
 
@@ -49,12 +51,12 @@ def main():
     root = ET.fromstring(fetch_feed())
     try:
         with open(OUT, encoding='utf-8') as file:
-            videos = {video['id']: video for video in json.load(file)['videos']}
+            videos = {video['id']: video for video in json.load(file)['videos'] if video['id'] not in EXCLUDE}
     except (FileNotFoundError, ValueError, KeyError):
         videos = {}
     for entry in root.findall('a:entry', NS):
         title = entry.findtext('a:title', '', NS)
-        if not TAG.match(title):
+        if not TAG.match(title) or entry.findtext('yt:videoId', '', NS) in EXCLUDE:
             continue
         video_id = entry.findtext('yt:videoId', '', NS)
         videos[video_id] = {'id': video_id, 'title': TAG.sub('', title).strip(), 'published': entry.findtext('a:published', '', NS)[:10]}
