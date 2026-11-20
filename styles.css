@@ -241,3 +241,6 @@ body[data-page="home"] .head h2{font-size:clamp(24px,2.7vw,34px)}
 .video-thumb.is-active img,.video-thumb:hover img{border-color:#f05a22;opacity:1}
 .video-thumb.is-active span{color:#1d2433}
 @media(max-width:720px){.video-thumbs{grid-template-columns:repeat(2,1fr);gap:12px}}
+/* RFM | ETRI wordmark in the header */
+.mark{width:260px;height:34px;background:url("assets/rfm-logo.png") left center/contain no-repeat}
+@media(max-width:720px){.mark{width:184px;height:24px}}
