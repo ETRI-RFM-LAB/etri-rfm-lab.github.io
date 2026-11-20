@@ -2,6 +2,11 @@
   "channel": "UCyr9KjwK-02c5cT6PS4rbFg",
   "videos": [
     {
+      "id": "2pdW2pv6rnc",
+      "title": "Whole-Body VLA Inference Demo on Washer with Failure Recovery",
+      "published": "2026-11-20"
+    },
+    {
       "id": "JLJXQ2Nbquc",
       "title": "Whole-Body Teleoperation for Household Tasks",
       "published": "2026-11-04"
