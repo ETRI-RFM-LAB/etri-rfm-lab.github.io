@@ -244,3 +244,6 @@ body[data-page="home"] .head h2{font-size:clamp(24px,2.7vw,34px)}
 /* RFM | ETRI wordmark in the header */
 .mark{width:260px;height:34px;background:url("assets/rfm-logo.png") left center/contain no-repeat}
 @media(max-width:720px){.mark{width:184px;height:24px}}
+.mark{width:352px;height:46px}
+@media(max-width:720px){.mark{width:230px;height:30px}}
+@media(min-width:721px) and (max-width:960px){.mark{width:290px;height:38px}}
