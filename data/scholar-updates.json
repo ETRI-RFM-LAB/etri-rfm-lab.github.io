@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01T08:01+09:00",
+  "updated": "2026-11-22T08:01+09:00",
   "columns": [
     "ID",
     "논문 제목",
@@ -22,6 +22,70 @@
   ],
   "failed_members": [],
   "items": [
+    {
+      "title": "디지털 트윈 기반 실· 가상 연계 로봇 시연 데이터 생성 및 궤적 생성 기반 가상 데이터 증강",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aIL0mvoAAAAJ&pagesize=50&sortby=pubdate&citation_for_view=aIL0mvoAAAAJ:4JMBOYKVnBMC",
+      "authors": "최영재， 조규성， 한병옥",
+      "venue": "대한전자공학회 학술대회, 2123-2125",
+      "year": 2026,
+      "members": [
+        "ByungOk Han"
+      ],
+      "link": "",
+      "first_seen": "2026-11-22",
+      "row": [
+        "",
+        "디지털 트윈 기반 실· 가상 연계 로봇 시연 데이터 생성 및 궤적 생성 기반 가상 데이터 증강",
+        "Accept",
+        "최영재， 조규성， 한병옥",
+        "최영재， 조규성， 한병옥",
+        "",
+        "2026",
+        "학회",
+        "대한전자공학회 학술대회, 2123-2125",
+        "FALSE",
+        "FALSE",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "title": "Attention 분석을 활용한 Pick-and-Place 과제 실패 사례 분석",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aIL0mvoAAAAJ&pagesize=50&sortby=pubdate&citation_for_view=aIL0mvoAAAAJ:j3f4tGmQtD8C",
+      "authors": "박진규， 한병옥， 윤우한",
+      "venue": "제어· 로봇· 시스템학회 학술 대회 (ICROS) 2026, 227-228",
+      "year": 2026,
+      "members": [
+        "ByungOk Han"
+      ],
+      "link": "",
+      "first_seen": "2026-11-22",
+      "row": [
+        "",
+        "Attention 분석을 활용한 Pick-and-Place 과제 실패 사례 분석",
+        "Accept",
+        "박진규， 한병옥， 윤우한",
+        "박진규， 한병옥， 윤우한",
+        "",
+        "2026",
+        "학회",
+        "제어· 로봇· 시스템학회 학술 대회 (ICROS) 2026, 227-228",
+        "FALSE",
+        "FALSE",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
     {
       "title": "Learning Tactile-Aware Hand Representations from Human Hand-Object Interaction Data",
       "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=aIL0mvoAAAAJ&pagesize=50&sortby=pubdate&citation_for_view=aIL0mvoAAAAJ:RHpTSmoSYBkC",
@@ -279,7 +343,7 @@
       ]
     },
     {
-      "title": "IVRA: Improving Visual-Token Relations for Robot Action Policy with Training-Free Hint-Based Guidance",
+      "title": "IVRA: Improving visual-token relations for robot action policy with training-free hint-based guidance",
       "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VyOx3aAAAAAJ&pagesize=50&sortby=pubdate&citation_for_view=VyOx3aAAAAAJ:YOwf2qJgpHMC",
       "authors": "Jongwoo Park, Kanchana Ranasinghe, Jinhyeok Jang, Cristina Mata, Yoo Sung Jang, Michael S Ryoo",
       "venue": "2026 IEEE International Conference on Robotics and Automation (ICRA)",
@@ -291,7 +355,7 @@
       "first_seen": "2026-10-21",
       "row": [
         "",
-        "IVRA: Improving Visual-Token Relations for Robot Action Policy with Training-Free Hint-Based Guidance",
+        "IVRA: Improving visual-token relations for robot action policy with training-free hint-based guidance",
         "Accept",
         "Jongwoo Park, Kanchana Ranasinghe, Jinhyeok Jang, Cristina Mata, Yoo Sung Jang, Michael S Ryoo",
         "Jongwoo Park",
