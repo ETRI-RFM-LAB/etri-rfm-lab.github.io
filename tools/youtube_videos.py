@@ -27,6 +27,7 @@ EXCLUDE = {
     'GB557Uy_3ZM',  # Dual-Process Vision-Language-Action Model Demo
     'u1S1g7a8ChE',  # Dual-Process VLA Under System 2 Failure
     'vBFTPuRpU1E',  # Learning from Oblivion (CVPR 2026 Highlight)
+    'hcBDcjuY-6Q',  # Old upload of the Digital-Twin Vehicle Inspection Simulator, replaced by RCNGFUCBkP4
 }
 TAG = re.compile(r'^\s*\[RFM\]\s*', re.I)
 NS = {'a': 'http://www.w3.org/2005/Atom', 'yt': 'http://www.youtube.com/xml/schemas/2015'}
