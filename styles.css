@@ -258,3 +258,10 @@ body[data-page="home"] .head h2{font-size:clamp(24px,2.7vw,34px)}
 .strip-arrow[hidden]{display:none}
 @media(max-width:960px){.strip-arrow{top:calc(((100vw - 40px) - 48px)/4*9/16/2 - 18px)}}
 @media(max-width:720px){.video-strip .video-thumbs{grid-auto-columns:calc((100% - 12px)/2);gap:12px}.strip-arrow{top:calc(((100vw - 40px) - 12px)/2*9/16/2 - 18px)}.strip-arrow.prev{left:-6px}.strip-arrow.next{right:-6px}}
+/* News row: two cards visible, the rest scroll sideways (one on phones) */
+.news-strip{position:relative}
+.news-strip .news-cards{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 20px)/2);grid-template-columns:none;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:4px;align-items:stretch}
+.news-strip .news-cards::-webkit-scrollbar{display:none}
+.news-strip .news-card{scroll-snap-align:start}
+.news-strip .strip-arrow{top:calc(50% - 18px)}
+@media(max-width:720px){.news-strip .news-cards{grid-auto-columns:88%;gap:12px}.news-strip .strip-arrow.prev{left:-6px}.news-strip .strip-arrow.next{right:-6px}}

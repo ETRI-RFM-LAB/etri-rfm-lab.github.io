@@ -411,7 +411,7 @@ function renderUstProfessors(items) {
 }
 
 function renderNews(items) {
-  const data = items.filter(item => item['뉴스 제목']).sort((a, b) => dateValue(b['날짜']) - dateValue(a['날짜'])).slice(0, 5);
+  const data = items.filter(item => item['뉴스 제목']).sort((a, b) => dateValue(b['날짜']) - dateValue(a['날짜']));
   const root = document.getElementById('news-list'); root.replaceChildren();
   data.forEach(item => {
     const article = document.createElement('article'); article.className = 'news-card';
@@ -428,6 +428,20 @@ function renderNews(items) {
   });
   if (!data.length) { const empty = document.createElement('div'); empty.className = 'empty-state'; empty.textContent = 'No news is available.'; root.append(empty); }
   status('news-status', `${data.length} news item${data.length === 1 ? '' : 's'}`);
+  setupStrip(root);
+}
+
+// Sideways-scrolling row: the arrows beside it page one screenful at a time and hide at either end.
+function setupStrip(row) {
+  const strip = row.parentElement;
+  const prev = strip.querySelector('.strip-arrow.prev'), next = strip.querySelector('.strip-arrow.next');
+  if (!prev || !next || strip.dataset.ready) return;
+  strip.dataset.ready = '1';
+  const update = () => { prev.hidden = row.scrollLeft < 4; next.hidden = row.scrollLeft + row.clientWidth > row.scrollWidth - 4; };
+  prev.addEventListener('click', () => row.scrollBy({ left: -row.clientWidth, behavior: 'smooth' }));
+  next.addEventListener('click', () => row.scrollBy({ left: row.clientWidth, behavior: 'smooth' }));
+  row.addEventListener('scroll', update, { passive: true }); window.addEventListener('resize', update);
+  requestAnimationFrame(update);
 }
 
 function bindFilters() {
