@@ -17,16 +17,6 @@
       "published": "2026-11-20"
     },
     {
-      "id": "GB557Uy_3ZM",
-      "title": "Dual-Process Vision-Language-Action Model Demo",
-      "published": "2026-11-20"
-    },
-    {
-      "id": "u1S1g7a8ChE",
-      "title": "Dual-Process VLA Under System 2 Failure",
-      "published": "2026-11-20"
-    },
-    {
       "id": "JLJXQ2Nbquc",
       "title": "Whole-Body Teleoperation for Household Tasks",
       "published": "2026-11-04"
@@ -40,11 +30,6 @@
       "id": "UMd-dkMpVP4",
       "title": "Whole-Body VLA Inference Demo on Washer",
       "published": "2026-10-17"
-    },
-    {
-      "id": "vBFTPuRpU1E",
-      "title": "Learning from Oblivion (CVPR 2026 Highlight)",
-      "published": "2026-05-26"
     }
   ]
 }
