@@ -23,7 +23,7 @@ FEED = f'https://www.youtube.com/feeds/videos.xml?channel_id={CHANNEL_ID}'
 REPO = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 OUT = os.path.join(REPO, 'data', 'videos.json')
 # Videos left off the home page on purpose.
-EXCLUDE = {'vBFTPuRpU1E'}  # Learning from Oblivion (shown on the Research page)
+EXCLUDE = set()
 TAG = re.compile(r'^\s*\[RFM\]\s*', re.I)
 NS = {'a': 'http://www.w3.org/2005/Atom', 'yt': 'http://www.youtube.com/xml/schemas/2015'}
 
