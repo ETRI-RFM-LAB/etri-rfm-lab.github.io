@@ -2,8 +2,28 @@
   "channel": "UCyr9KjwK-02c5cT6PS4rbFg",
   "videos": [
     {
+      "id": "hcBDcjuY-6Q",
+      "title": "Digital-Twin Vehicle Inspection Simulator: Virtual Teleoperation and Real-Sim Synchronization",
+      "published": "2026-11-23"
+    },
+    {
+      "id": "rK5Ma6Rt7t0",
+      "title": "Language-Guided Long-Horizon Whole-Body Manipulation: Microwave Task",
+      "published": "2026-11-23"
+    },
+    {
       "id": "2pdW2pv6rnc",
       "title": "Whole-Body VLA Inference Demo on Washer with Failure Recovery",
+      "published": "2026-11-20"
+    },
+    {
+      "id": "GB557Uy_3ZM",
+      "title": "Dual-Process Vision-Language-Action Model Demo",
+      "published": "2026-11-20"
+    },
+    {
+      "id": "u1S1g7a8ChE",
+      "title": "Dual-Process VLA Under System 2 Failure",
       "published": "2026-11-20"
     },
     {
