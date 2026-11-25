@@ -2,6 +2,16 @@
   "channel": "UCyr9KjwK-02c5cT6PS4rbFg",
   "videos": [
     {
+      "id": "qxPOyOKMvF8",
+      "title": "OmniAct: Cross-Embodiment Vision-Language-Action Model",
+      "published": "2026-11-25"
+    },
+    {
+      "id": "4wd30Rwj5to",
+      "title": "Whole-Body Teleoperation for Household Tasks at the Data Factory",
+      "published": "2026-11-25"
+    },
+    {
       "id": "RCNGFUCBkP4",
       "title": "Digital-Twin Vehicle Inspection Simulator: Virtual Teleoperation and Real-Sim Synchronization",
       "published": "2026-11-23"
