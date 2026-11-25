@@ -5,14 +5,13 @@
 <main><section class="section" id="video"><div class="wrap"><div class="head"><small>VIDEO</small><h2>See Our Robots in Action</h2></div><div class="video-player"><div class="video-frame"><iframe id="video-main" src="https://www.youtube-nocookie.com/embed/qxPOyOKMvF8" title="OmniAct: Cross-Embodiment Vision-Language-Action Model" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><div class="video-strip"><button type="button" class="strip-arrow prev" aria-label="Previous videos" hidden>‹</button><div class="video-thumbs" id="video-thumbs"></div><button type="button" class="strip-arrow next" aria-label="More videos" hidden>›</button></div></div></div></div></section>
 <section class="section" id="news"><div class="wrap"><div class="head"><small>LAB UPDATES</small><h2>News & Highlights</h2><p class="status" id="news-status">Loading news...</p></div><div class="news-strip"><button type="button" class="strip-arrow prev" aria-label="Previous news" hidden>‹</button><div class="news-cards" id="news-list"></div><button type="button" class="strip-arrow next" aria-label="More news" hidden>›</button></div></div></section></main>
 <footer class="footer"><div class="wrap"><span>© 2026 Electronics and Telecommunications Research Institute.</span><span>ETRI RFM Lab · <a href="https://www.youtube.com/@ETRI_HROS" target="_blank" rel="noopener">YouTube</a></span></div></footer><script src="sheets.js?v=35"></script><script>
-// Home video player: FEATURED plays on top and every video is a thumbnail in a sideways-scrolling row (data/videos.json, refreshed by tools/youtube_videos.py).
+// Home video player: the newest video plays on top and every video is a thumbnail in a sideways-scrolling row, newest first (data/videos.json, refreshed by tools/youtube_videos.py).
 (async () => {
-  const FEATURED = 'qxPOyOKMvF8';  // OmniAct: Cross-Embodiment Vision-Language-Action Model
   const frame = document.getElementById('video-main');
   const list = document.getElementById('video-thumbs');
   let videos = [{ id: 'JLJXQ2Nbquc', title: 'Whole-Body Teleoperation for Household Tasks' }, { id: 'UMd-dkMpVP4', title: 'Whole-Body VLA Inference Demo on Washer' }];
   try { const response = await fetch('data/videos.json', { cache: 'no-cache' }); if (response.ok) { const data = await response.json(); if (data.videos?.length) videos = data.videos; } } catch {}
-  videos.sort((a, b) => (b.id === FEATURED) - (a.id === FEATURED));
+  videos.sort((a, b) => (b.published || '').localeCompare(a.published || ''));
   const play = (video, autoplay) => { frame.src = `https://www.youtube-nocookie.com/embed/${video.id}${autoplay ? '?autoplay=1' : ''}`; frame.title = video.title; };
   if (frame.src.indexOf(videos[0].id) < 0) play(videos[0], false);
   if (videos.length < 2) return;

@@ -4,47 +4,47 @@
     {
       "id": "qxPOyOKMvF8",
       "title": "OmniAct: Cross-Embodiment Vision-Language-Action Model",
-      "published": "2026-11-25"
+      "published": "2026-11-25T00:27:10+00:00"
     },
     {
       "id": "4wd30Rwj5to",
       "title": "Whole-Body Teleoperation for Household Tasks at the Data Factory",
-      "published": "2026-11-25"
-    },
-    {
-      "id": "RCNGFUCBkP4",
-      "title": "Digital-Twin Vehicle Inspection Simulator: Virtual Teleoperation and Real-Sim Synchronization",
-      "published": "2026-11-23"
-    },
-    {
-      "id": "rK5Ma6Rt7t0",
-      "title": "Language-Guided Long-Horizon Whole-Body Manipulation: Microwave Task",
-      "published": "2026-11-23"
+      "published": "2026-11-25T00:20:22+00:00"
     },
     {
       "id": "yNHm1xId_0Q",
       "title": "Real or Simulation? A Digital Twin That Replays 9,847 Humanoid Demonstrations",
-      "published": "2026-11-23"
+      "published": "2026-11-23T09:36:23+00:00"
+    },
+    {
+      "id": "RCNGFUCBkP4",
+      "title": "Digital-Twin Vehicle Inspection Simulator: Virtual Teleoperation and Real-Sim Synchronization",
+      "published": "2026-11-23T06:54:02+00:00"
+    },
+    {
+      "id": "rK5Ma6Rt7t0",
+      "title": "Language-Guided Long-Horizon Whole-Body Manipulation: Microwave Task",
+      "published": "2026-11-23T00:59:51+00:00"
     },
     {
       "id": "2pdW2pv6rnc",
       "title": "Whole-Body VLA Inference Demo on Washer with Failure Recovery",
-      "published": "2026-11-20"
+      "published": "2026-11-20T03:59:54+00:00"
     },
     {
       "id": "JLJXQ2Nbquc",
       "title": "Whole-Body Teleoperation for Household Tasks",
-      "published": "2026-11-04"
+      "published": "2026-11-04T01:36:49+00:00"
     },
     {
       "id": "vH0m6NBYpOI",
       "title": "VLA-based Car Inspection Demo",
-      "published": "2026-11-03"
+      "published": "2026-11-03T13:22:23+00:00"
     },
     {
       "id": "UMd-dkMpVP4",
       "title": "Whole-Body VLA Inference Demo on Washer",
-      "published": "2026-10-17"
+      "published": "2026-10-17T01:14:04+00:00"
     }
   ]
 }

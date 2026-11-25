@@ -64,7 +64,7 @@ def main():
         if not TAG.match(title) or entry.findtext('yt:videoId', '', NS) in EXCLUDE:
             continue
         video_id = entry.findtext('yt:videoId', '', NS)
-        videos[video_id] = {'id': video_id, 'title': TAG.sub('', title).strip(), 'published': entry.findtext('a:published', '', NS)[:10]}
+        videos[video_id] = {'id': video_id, 'title': TAG.sub('', title).strip(), 'published': entry.findtext('a:published', '', NS)}
     ordered = sorted(videos.values(), key=lambda video: video['published'], reverse=True)
     text = json.dumps({'channel': CHANNEL_ID, 'videos': ordered}, ensure_ascii=False, indent=2) + '\n'
     try:
