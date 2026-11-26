@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26T08:01+09:00",
+  "updated": "2026-11-27T08:01+09:00",
   "columns": [
     "ID",
     "논문 제목",
@@ -93,7 +93,8 @@
       "venue": "arXiv preprint arXiv:2610.27995",
       "year": 2026,
       "members": [
-        "ByungOk Han"
+        "ByungOk Han",
+        "Yeonguk Yu"
       ],
       "link": "https://arxiv.org/abs/2610.27995",
       "first_seen": "2026-11-01",
